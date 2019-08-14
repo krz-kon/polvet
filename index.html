@@ -108,13 +108,10 @@
   </footer>
 
 <script>
-    jQuery(document).ready(function ($) {
-      $('.btn-to-top').click(function () {
-        $('html, body').animate({
-          scrollTop: $("header").offset().top
-        }, 1);
-      })
-    });
+ $(".btn-to-top"").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
   </script>
 </body>
 
