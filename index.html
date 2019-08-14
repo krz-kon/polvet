@@ -15,6 +15,15 @@
 </head>
 
 <body>
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.btn-to-top').click(function () {
+        $('html, body').animate({
+          scrollTop: $("header").offset().top
+        }, 1);
+      })
+    });
+  </script>
   <header>
     <img src="../polvet/img/logo.png" alt="logo male" class="logo-small">
     <nav>
@@ -108,15 +117,7 @@
     <div class="footer">&copy; <a href="http://uglycat.pl">uglycat.pl</a> 2019</div>
   </footer>
 
-  <script>
-    $(".btn-to-top"
-    ").click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, "slow");
-    return false;
-    });
-  </script>
+
 </body>
 
 </html>
